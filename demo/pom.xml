@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>${revision}</version>
+		<version>1.0.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
@@ -28,15 +28,15 @@
 	</scm>
 
 	    <dependencyManagement>
-<!-- <dependencies> -->
-<!-- <dependency> -->
-<!-- <groupId>com.sfs.vsuite</groupId> -->
-<!-- <artifactId>vsuite-bom</artifactId> -->
-<!-- <version>${bomRevision}</version> -->
-<!-- <type>pom</type> -->
-<!-- <scope>import</scope> -->
-<!-- </dependency> -->
-<!-- </dependencies> -->
+			  <dependencies>
+			  <dependency>
+			  <groupId>com.sfs.vsuite</groupId>
+			  <artifactId>vsuite-bom</artifactId>
+			  <version>${bomRevision}</version>
+			  <type>pom</type>
+			  <scope>import</scope>
+			  </dependency>
+			  </dependencies>
 	    </dependencyManagement>
 
 	<properties>
