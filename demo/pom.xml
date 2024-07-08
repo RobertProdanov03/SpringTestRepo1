@@ -26,6 +26,19 @@
 		<tag/>
 		<url/>
 	</scm>
+
+	    <dependencyManagement>
+	        <dependencies>
+	            <dependency>
+	                <groupId>com.sfs.vsuite</groupId>
+	                <artifactId>vsuite-bom</artifactId>
+	                <version>${bomRevision}</version>
+	                <type>pom</type>
+	                <scope>import</scope>
+	            </dependency>
+	        </dependencies>
+	    </dependencyManagement>
+
 	<properties>
 		<java.version>21</java.version>
 	</properties>
