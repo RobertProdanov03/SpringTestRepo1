@@ -5,12 +5,12 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.1</version>
+		<version>${revision}</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${revesion}</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -28,15 +28,15 @@
 	</scm>
 
 	    <dependencyManagement>
-	        <dependencies>
-	            <dependency>
-	                <groupId>com.sfs.vsuite</groupId>
-	                <artifactId>vsuite-bom</artifactId>
-	                <version>${bomRevision}</version>
-	                <type>pom</type>
-	                <scope>import</scope>
-	            </dependency>
-	        </dependencies>
+<!-- <dependencies> -->
+<!-- <dependency> -->
+<!-- <groupId>com.sfs.vsuite</groupId> -->
+<!-- <artifactId>vsuite-bom</artifactId> -->
+<!-- <version>${bomRevision}</version> -->
+<!-- <type>pom</type> -->
+<!-- <scope>import</scope> -->
+<!-- </dependency> -->
+<!-- </dependencies> -->
 	    </dependencyManagement>
 
 	<properties>
@@ -46,6 +46,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+<!--			<version>3.3.1</version>-->
 		</dependency>
 
 		<dependency>
@@ -53,6 +54,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+<!--		<dependency>-->
+<!--			<groupId>com.sfs.vsuite</groupId>-->
+<!--			<artifactId>core</artifactId>-->
+<!--			<version>8.0.0</version> -->
+<!--		</dependency>-->
+
 	</dependencies>
 
 	<build>
